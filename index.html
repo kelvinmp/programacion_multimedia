@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera evaluación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Mi Microsite Educativo</h1>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#" data-section="inicio">Inicio</a></li>
+            <li><a href="#" data-section="galeria">Galería</a></li>
+            <li><a href="#" data-section="contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="inicio" class="content-section active">
+            <h2>Bienvenido a mi Proyecto</h2>
+            <p>Esta es la sección de inicio de mi aplicación SPA.</p>
+            
+            <img src="https://via.placeholder.com/400x200" alt="Imagen de ejemplo" class="content-image">
+            
+            <button id="toggle-descripcion" class="toggle-btn">Mostrar Descripción</button>
+            <div id="descripcion" class="hidden-content">
+                <p>¡Esta es una descripción que se muestra u oculta al hacer clic! Ejemplo de interactividad hipermedia.</p>
+            </div>
+        </section>
+
+
+        <section id="galeria" class="content-section">
+            <h2>Galería Multimedia</h2>
+            <p>Contenido de la sección galería.</p>
+        </section>
+
+        <section id="contacto" class="content-section">
+            <h2>Contacto</h2>
+            <p>Información de contacto aquí.</p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Curso de Programación Multimedia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
