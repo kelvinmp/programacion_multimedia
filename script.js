@@ -44,4 +44,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Mostrar la sección de inicio por defecto
     showSection('inicio');
+
+    // FUNCIÓN DE UTILIDAD (Evaluación 2)
+
+function validarEmail(email) {
+    if (email.trim() === "") {
+        return { valido: false, mensaje: "El campo no puede estar vacío" };
+    }
+    if (!email.includes("@") || !email.includes(".")) {
+        return { valido: false, mensaje: "Debe ser un correo válido (ej: usuario@dominio.com)" };
+    }
+    return { valido: true, mensaje: "✓ Correo válido" };
+}
+
+    const emailInput = document.getElementById("email");
+const feedback = document.getElementById("feedback");
+const form = document.getElementById("contact-form");
+
+emailInput.addEventListener("input", function () {
+    const resultado = validarEmail(emailInput.value);
+
+    if (resultado.valido) {  // <-- Cambia a esto
+        feedback.textContent = resultado.mensaje;
+        feedback.className = "feedback success";
+    } else {
+        feedback.textContent = resultado.mensaje;
+        feedback.className = "feedback error";
+    }
+});
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+});
+
+
 });

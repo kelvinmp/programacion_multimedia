@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera evaluación</title>
+    <title>Segunda Evaluacion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <h1>Mi Microsite Educativo</h1>
+        <h1>Mi Microsite Educativo sobre Música</h1>
     </header>
 
     <!-- NAVEGACIÓN -->
@@ -24,26 +24,60 @@
     <main>
         
         <section id="inicio" class="content-section active">
-            <h2>Bienvenido a mi Proyecto</h2>
-            <p>Esta es la sección de inicio de mi aplicación SPA.</p>
-            
-            <img src="https://via.placeholder.com/400x200" alt="Imagen de ejemplo" class="content-image">
-            
-            <button id="toggle-descripcion" class="toggle-btn">Mostrar Descripción</button>
+            <h2>Introducción a la Teoría Musical</h2>
+
+            <p>
+                La teoría musical es el conjunto de conceptos que permiten comprender cómo se organiza la música.
+                A través del estudio del solfeo, el ritmo y las notas musicales, el estudiante desarrolla la
+                capacidad de leer, interpretar y ejecutar música de manera correcta.
+            </p>
+
+            <p>
+                El solfeo es una herramienta fundamental en la educación musical, ya que ayuda a entrenar el oído,
+                mejorar la lectura musical y reconocer patrones sonoros. En este micrositio encontrarás ejemplos
+                básicos e interactivos para reforzar estos conocimientos.
+            </p>
+
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Music_notes.svg" 
+                alt="Notas musicales en un pentagrama" 
+                class="content-image"
+            >
+
+            <button id="toggle-descripcion" class="toggle-btn">
+                Mostrar objetivo educativo
+            </button>
+
             <div id="descripcion" class="hidden-content">
-                <p>¡Esta es una descripción que se muestra u oculta al hacer clic! Ejemplo de interactividad hipermedia.</p>
+                <p>
+                    El objetivo de este recurso educativo es introducir los conceptos básicos de la teoría musical
+                    y el solfeo mediante una aplicación web interactiva, facilitando el aprendizaje a través de
+                    texto, imágenes y elementos multimedia.
+                </p>
             </div>
         </section>
 
 
         <section id="galeria" class="content-section">
             <h2>Galería Multimedia</h2>
-            <p>Contenido de la sección galería.</p>
+            <p>Ejemplos de elementos multimedia educativos.</p>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300x200" alt="Ejemplo 1">
+                <img src="https://via.placeholder.com/300x200" alt="Ejemplo 2">
+            </div>
         </section>
+
 
         <section id="contacto" class="content-section">
             <h2>Contacto</h2>
-            <p>Información de contacto aquí.</p>
+
+            <form id="contact-form">
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" placeholder="ejemplo@email.com">
+                <p id="feedback" class="feedback"></p>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 
