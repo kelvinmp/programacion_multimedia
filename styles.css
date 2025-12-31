@@ -147,7 +147,7 @@ input {
     transform: scale(1.05);
 }
 
-/* Mejorar feedback del formulario */
+
 input:invalid {
     border-color: #e74c3c;
 }

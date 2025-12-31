@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButton.addEventListener('click', function() {
         descripcion.classList.toggle('show');
         
-        // Cambiar el texto del botón
+        
         if (descripcion.classList.contains('show')) {
             this.textContent = 'Ocultar Descripción';
         } else {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Mostrar la sección de inicio por defecto
+    
     showSection('inicio');
 
     // FUNCIÓN DE UTILIDAD (Evaluación 2)
