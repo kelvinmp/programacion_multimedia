@@ -2,90 +2,188 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Microsite Educativo – Teoría Musical</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda Evaluacion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <h1>Mi Microsite Educativo sobre Música</h1>
-    </header>
 
-    <!-- NAVEGACIÓN -->
-    <nav>
-        <ul>
-            <li><a href="#" data-section="inicio">Inicio</a></li>
-            <li><a href="#" data-section="galeria">Galería</a></li>
-            <li><a href="#" data-section="contacto">Contacto</a></li>
-        </ul>
-    </nav>
+<header>
+    <h1>Microsite Educativo sobre Música</h1>
+</header>
 
-    <main>
-        
-        <section id="inicio" class="content-section active">
-            <h2>Introducción a la Teoría Musical</h2>
+<nav>
+    <ul>
+        <li><a href="#" data-section="inicio">Inicio</a></li>
+        <li><a href="#" data-section="galeria">Intervalos y Acordes</a></li>
+        <li><a href="#" data-section="contacto">Contacto</a></li>
+    </ul>
+</nav>
 
-            <p>
-                La teoría musical es el conjunto de conceptos que permiten comprender cómo se organiza la música.
-                A través del estudio del solfeo, el ritmo y las notas musicales, el estudiante desarrolla la
-                capacidad de leer, interpretar y ejecutar música de manera correcta.
-            </p>
+<main>
 
-            <p>
-                El solfeo es una herramienta fundamental en la educación musical, ya que ayuda a entrenar el oído,
-                mejorar la lectura musical y reconocer patrones sonoros. En este micrositio encontrarás ejemplos
-                básicos e interactivos para reforzar estos conocimientos.
-            </p>
+<section id="inicio" class="content-section active">
+    <h2>Fundamentos de la Música</h2>
 
-            <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Music_notes.svg" 
-                alt="Notas musicales en un pentagrama" 
-                class="content-image"
-            >
+    <h3>Sonido</h3>
+    <p>
+        El sonido es una vibración que se propaga por el aire y llega al oído, siendo percibida
+        como una sensación auditiva.
+    </p>
 
-            <button id="toggle-descripcion" class="toggle-btn">
-                Mostrar objetivo educativo
-            </button>
+    <h3>Cualidades del sonido</h3>
+    <ul>
+        <li><strong>Altura:</strong> Indica si el sonido es agudo o grave, según la frecuencia de vibración.</li>
+        <li><strong>Intensidad:</strong> Es el volumen del sonido, si es fuerte o suave.</li>
+        <li><strong>Timbre:</strong> Es el color del sonido, lo que permite distinguir instrumentos o voces.</li>
+        <li><strong>Duración:</strong> Es el tiempo que el sonido permanece.</li>
+    </ul>
 
-            <div id="descripcion" class="hidden-content">
-                <p>
-                    El objetivo de este recurso educativo es introducir los conceptos básicos de la teoría musical
-                    y el solfeo mediante una aplicación web interactiva, facilitando el aprendizaje a través de
-                    texto, imágenes y elementos multimedia.
-                </p>
-            </div>
-        </section>
+    <h3>Música</h3>
+    <p>
+        La música es la organización de sonidos con intención artística. También puede definirse
+        como la combinación de ritmo, melodía y armonía.
+    </p>
 
+    <h3>Elementos de la música</h3>
+    <ul>
+        <li><strong>Ritmo:</strong> Patrón de tiempos en la música.</li>
+        <li><strong>Melodía:</strong> Sucesión de notas que forman una frase musical.</li>
+        <li><strong>Armonía:</strong> Acompañamiento que da profundidad a la melodía.</li>
+    </ul>
 
-        <section id="galeria" class="content-section">
-            <h2>Galería Multimedia</h2>
-            <p>Ejemplos de elementos multimedia educativos.</p>
-            <div class="gallery">
-                <img src="https://via.placeholder.com/300x200" alt="Ejemplo 1">
-                <img src="https://via.placeholder.com/300x200" alt="Ejemplo 2">
-            </div>
-        </section>
+    <h3>Instrumentos de teclado</h3>
 
+    <p><strong>Piano:</strong> Instrumento musical de teclado que produce sonido al golpear cuerdas con martillos internos.</p>
 
-        <section id="contacto" class="content-section">
-            <h2>Contacto</h2>
+    <h4>Partes básicas del piano</h4>
+    <ul>
+        <li><strong>Teclado:</strong> Teclas blancas y negras (generalmente 88).</li>
+        <li><strong>Martillos:</strong> Golpean las cuerdas al presionar una tecla.</li>
+        <li><strong>Cuerdas:</strong> Vibran para producir el sonido.</li>
+        <li><strong>Caja de resonancia:</strong> Amplifica el sonido.</li>
+    </ul>
 
-            <form id="contact-form">
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" placeholder="ejemplo@email.com">
-                <p id="feedback" class="feedback"></p>
+    <h4>Tipos de piano</h4>
+    <ul>
+        <li><strong>Piano de cola:</strong> Grande, sonido potente y profesional.</li>
+        <li><strong>Piano vertical:</strong> Compacto, ideal para hogares y escuelas.</li>
+        <li><strong>Piano digital:</strong> Electrónico, simula el piano acústico.</li>
+    </ul>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+    <p><strong>Teclado:</strong> Instrumento electrónico con múltiples sonidos y teclas ligeras.</p>
+    <p><strong>Sintetizador:</strong> Dispositivo que crea sonidos mediante síntesis electrónica.</p>
+    <p><strong>Controlador MIDI:</strong> Envía señales digitales para controlar software o hardware musical.</p>
 
+    <h3>Alteraciones</h3>
+    <ul>
+        <li><strong>Sostenido (♯):</strong> Eleva una nota medio tono.</li>
+        <li><strong>Bemol (♭):</strong> Baja una nota medio tono.</li>
+    </ul>
 
-    <footer>
-        <p>&copy; 2025 Curso de Programación Multimedia</p>
-    </footer>
+    <h3>Tiempo musical</h3>
+    <ul>
+        <li><strong>Pulso:</strong> Latido regular de la música que organiza el tiempo.</li>
+        <li><strong>Tempo:</strong> Velocidad del pulso (allegro, andante, adagio).</li>
+        <li>
+            <strong>Compás:</strong> División del tiempo musical en partes iguales.
+            Se representa con fracciones como 4/4, 3/4 o 6/8.
+        </li>
+    </ul>
 
-    <script src="script.js"></script>
+</section>
+
+<section id="galeria" class="content-section">
+    <h2>Tipos de Acordes – Escucha y Compara</h2>
+    <p>Haz Click en los botones para ver como se escuchan!.</p>
+
+    <div class="gallery">
+
+    <div>
+        <h3>Acorde Mayor</h3>
+        <img 
+            src="images/Mayor.png" 
+            alt="Major chord on keyboard"
+            class="chord-img"
+            data-audio="audio/Acorde_Mayor.m4a"
+        >
+        <p class="hint">🎵 Click en la imagen para escuchar el acorde</p>
+    </div>
+
+    <div>
+        <h3>Acorde Menor</h3>
+        <img 
+            src="images/Menor.png" 
+            alt="Minor chord on keyboard"
+            class="chord-img"
+            data-audio="audio/Acorde_Menor.m4a"
+        >
+        <p class="hint">🎵 Click en la imagen para escuchar el acorde</p>
+    </div>
+
+    <div>
+        <h3>Acorde Aumentado</h3>
+        <img 
+            src="images/Aumentado.png" 
+            alt="Augmented chord on keyboard"
+            class="chord-img"
+            data-audio="audio/Acorde_aumentado.m4a"
+        >
+        <p class="hint">🎵 Click en la imagen para escuchar el acorde</p>
+    </div>
+
+    <div>
+        <h3>Acorde Disminuido</h3>
+        <img 
+            src="images/Disminuido.png" 
+            alt="Diminished chord on keyboard"
+            class="chord-img"
+            data-audio="audio/Acorde_disminuido.m4a"
+        >
+        <p class="hint">🎵 Click en la imagen para escuchar el acorde</p>
+    </div>
+
+</div>
+</section>
+
+<section id="contacto" class="content-section">
+    <h2>Contacto</h2>
+
+    <form id="contact-form">
+    <label>Correo electrónico:</label><br>
+    <input 
+        type="email" 
+        id="email"
+        placeholder="ejemplo@email.com"
+    >
+    <div id="feedback" class="feedback"></div>
+    <br>
+    <button type="submit">Enviar</button>
+</form>
+
+</section>
+
+<div id="music-player" class="music-player">
+    <div class="player-controls">
+        <button id="play-bg" class="player-btn" title="Reproducir música">▶️</button>
+        <button id="pause-bg" class="player-btn" title="Pausar música">⏸️</button>
+        <span class="player-text">Música de fondo</span>
+        <div class="volume-control">
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.3">
+        </div>
+    </div>
+    <audio id="background-music" loop>
+        <source src="audio/Debussy.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 – Curso de Programación Multimedia</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

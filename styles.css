@@ -9,9 +9,10 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    padding-bottom: 80px; /* Espacio para el reproductor */
 }
 
-/* HEADER */
+/* Header */
 header {
     background: #2c3e50;
     color: white;
@@ -19,7 +20,7 @@ header {
     text-align: center;
 }
 
-/* NAVEGACIÓN */
+/* Navegador */
 nav {
     background: #34495e;
     padding: 1rem;
@@ -44,7 +45,7 @@ nav a:hover {
     background: #1abc9c;
 }
 
-/* CONTENIDO PRINCIPAL */
+/* Main */
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -62,45 +63,139 @@ main {
 
 .content-section.active {
     display: block;
+    animation: fadeIn 0.5s ease;
 }
 
-/* Imagen */
-.content-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Títulos y texto */
+.content-section h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-section h3 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.content-section h4 {
+    color: #34495e;
+    margin-top: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.content-section ul {
+    background: #f8f9fa;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
     margin: 1rem 0;
+    border-left: 4px solid #3498db;
 }
 
-/* Botón y contenido oculto */
-.toggle-btn {
+.content-section li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.3rem;
+}
+
+.content-section strong {
+    color: #2c3e50;
+}
+
+/* Gallery - Mismo estilo que inicio */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.gallery > div {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.gallery > div:hover {
+    transform: translateY(-5px);
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.hint {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+/* Formulario de contacto */
+#contact-form {
+    max-width: 400px;
+    margin-top: 1.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
     background: #3498db;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
-    margin: 1rem 0;
+    margin-top: 0.5rem;
 }
 
-.toggle-btn:hover {
+button[type="submit"]:hover {
     background: #2980b9;
 }
 
-.hidden-content {
-    display: none;
-    background: #ecf0f1;
-    padding: 1rem;
-    border-radius: 4px;
-    margin-top: 1rem;
+.feedback {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
 }
 
-.hidden-content.show {
-    display: block;
+.feedback.error {
+    color: #e74c3c;
 }
 
-/* FOOTER */
+.feedback.success {
+    color: #27ae60;
+}
+
+/* Footer */
 footer {
     background: #2c3e50;
     color: white;
@@ -109,49 +204,52 @@ footer {
     margin-top: 2rem;
 }
 
-/* Feedback de formulario */
-.feedback {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-}
-
-.feedback.error {
-    color: red;
-}
-
-.feedback.success {
-    color: green;
-}
-
-input {
-    padding: 0.5rem;
-    width: 100%;
-    max-width: 300px;
-    margin-top: 0.5rem;
-}
-
-/* Agrega al CSS */
-.gallery {
-    display: flex;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.gallery img {
+/* Reproductor Debussy Clair de Lune */
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #2c3e50;
+    color: white;
+    padding: 0.8rem 1.2rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
-
-input:invalid {
-    border-color: #e74c3c;
+.player-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-input:valid {
-    border-color: #2ecc71;
+.player-btn:hover {
+    background: #2980b9;
+}
+
+.player-text {
+    font-size: 0.85rem;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#volume-slider {
+    width: 60px;
 }
